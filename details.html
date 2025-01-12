@@ -362,7 +362,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
         integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
+        <script>
             var swiper = new Swiper(".slider .mySwiper", {
                 autoplay: {
     delay: 3000,
@@ -373,6 +373,23 @@ effect: "fade",
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 40
+        }
+      }
     });
     var swiper = new Swiper(".service  .mySwiper", {
         autoplay: {
@@ -381,6 +398,36 @@ effect: "fade",
   loop: true,
       slidesPerView: 4,
       spaceBetween: 20,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 40
+        }
+      }
+    });
+    var swiper = new Swiper(".partner  .mySwiper", {
+        autoplay: {
+    delay: 3000,
+  },
+  loop: true,
+      slidesPerView: 5,
+      spaceBetween: 10,
       centeredSlides: true,
       pagination: {
         el: ".swiper-pagination",
@@ -399,6 +446,23 @@ effect: "fade",
         el: ".swiper-pagination",
         clickable: true,
       },
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 40
+        }
+      }
     });
     </script>
 </body>
